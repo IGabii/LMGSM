@@ -11,11 +11,11 @@ b{
 }
 
 .header{
-    position: fixed;
+    position:relative;
     top:0;
     left: 0;
     right: 0;
-    background-color: rgba(1,1,1,0.8);
+    background:linear-gradient(to right,rgba(17, 202, 26, 0.9),rgba(4,7,2,0.9),rgba(4,88,2,0.9));
     padding: 0px 4%;
     display: flex;
     flex-direction: column;
@@ -47,13 +47,17 @@ header img{
     font-size: 18px;
     color:#fff;
     text-decoration: none;
-    padding: 15px 35px;
+    padding: 10px 35px;
+    margin-bottom: 5px;
+    border-radius: 10px;
     display: block;
-    transition: all .2s ease;
+    transition: all .5s ease;
 }
 
 .header .navigation ul li a:hover{
-    background-color: #12A60F;
+    background: #000000;
+    background: linear-gradient(to top, #0f9b0f, #06c516);
+
 }
 
 .header .navigation ul li ul{
@@ -62,7 +66,8 @@ header img{
     width: 100%;
     background-color: rgba(1,1,1,0.8);
     display: none;
-    padding: 0;
+    padding:2px;
+    border-radius: 0 0 10px 10px;
 }
 
 .header .navigation ul li ul li a{
@@ -97,49 +102,13 @@ header img{
 /*=========Header==========================*/
 
 .header-container{
-    padding: 159px 20px 20px 20px;
+    padding: 20px;
     z-index: -1;
-    animation: galeria 20s infinite;
+    background-image:url(../galeria/fondoLiceo5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
-@keyframes galeria{
-    0%{
-        background-image:url(../galeria/fondoLiceoCopia.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    25%{
-        background-image:url(../galeria/fondoLiceo2Copia.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    50%{
-        background-image:url(../galeria/fondoLiceo3Copia.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    75%{
-        background-image:url(../galeria/fondoLiceo4Copia.jpg);
-        background-size: cover;
-        background-position: center;    
-        background-repeat: no-repeat;
-    }
-
-    100%{
-        background-image:url(../galeria/fondoLiceoCopia.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-}
-
-
 
 .titulo-header{
     color:#fff;
@@ -169,6 +138,9 @@ header img{
 
 .header-links-item{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon-header{
