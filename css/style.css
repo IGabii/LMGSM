@@ -16,7 +16,7 @@ b{
     left: 0;
     right: 0;
     background: #000428;
-    background: linear-gradient(to right, #004e92, #000428);
+    background: #000428;
 
     padding: 0px 4%;
     display: flex;
@@ -57,9 +57,10 @@ header img{
 }
 
 .header .navigation ul li a:hover{
-    background: #000000;
+    background-color: #fcfcfc;
     transform: scale(1.05);
-    background: linear-gradient(to top, #0dceb7, #06c5ac);
+    color:#000428;
+    box-shadow:0 0 7px #fff;
 
 }
 
@@ -138,7 +139,7 @@ header img{
     justify-content: space-evenly;
     align-items: center;
     background: #000428;
-    background: linear-gradient(to right, #004e92, #000428);
+    background:  #000428;
 }
 
 .header-links-item{
@@ -154,8 +155,10 @@ header img{
 }
 
 .header-links-item:hover{
-    background-color: #041d1a;
+    background-color: #fcfcfc;
     transform: scale(1.05);
+    color:#000428;
+    box-shadow: 0 0 10px #fff;;
 }
 
 .icon-header{
@@ -191,7 +194,7 @@ header img{
 
 
 
-
+/*===========Responsive======================================*/
 @media (max-width:1010px){
     .header label {
         display: initial;
