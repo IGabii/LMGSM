@@ -8,6 +8,7 @@ body{
 
 b{
     text-shadow: 0px 0px 1px #fff;
+    color:#000;
 }
 
 .header{
@@ -110,6 +111,7 @@ header img{
     z-index: -1;
     background:linear-gradient(to top,rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)),url(../galeria/20240103_133118.jpg);
     background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -180,117 +182,62 @@ a{
 /*==========Body Container==================*/
 
 .body-index-container{
-    padding: 30px 40px;
+    padding: 30px 40px 100px;
 }
 
-.liceoDescription-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    box-shadow: 6px 6px 20px #000 ;
-    border-radius: 0 60px 60px 0;
-}
-
-.liceoDescription-image{
-    background-color: #9da4db;
-    margin: 0;
+.liceo-description-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
     align-items: center;
-    padding:  0 20px;
+    padding: 70px 30px 0;
 }
 
-.container{
-    position: relative;
+.liceo-description{
+    padding: 20px;
+    width: 80%;
 }
 
-.container .wrapper{
-    width: 40vw;
-    height:40vh;
-    box-shadow: 10px 10px 20px rgba(0,0,0,0.6);
-    margin:3rem auto;
-    overflow: hidden;
-}
-
-.container .wrapper-holder{
-    display: grid;
-    grid-template-columns: repeat(4,100%);
-    height: 100%;
-    width: 100%;
-    animation: slider 20s ease-in-out infinite forwards;
-}
-
-.container #slider-img-1{
-    background-image:url(../galeria/carrousel/img1.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.container #slider-img-2{
-    background-image: url(../galeria/carrousel/img2.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.container #slider-img-3{
-    background-image: url(../galeria/carrousel/img3.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.container #slider-img-4{
-    background-image: url(../galeria/carrousel/20231215_183536.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-@keyframes slider {
-    0%{transform: translateX(0%);}
-    10%{transform: translateX(-100%);}
-    20%{transform: translateX(-100%);}
-    30%{transform: translateX(-200%);}
-    40%{transform: translateX(-200%);}
-    50%{transform: translateX(-200%);}
-    60%{transform: translateX(-200%);}
-    70%{transform: translateX(-300%);}
-    80%{transform: translateX(-300%);}
-    90%{transform: translateX(-100%);}
-    100%{transform: translateX(-100%);}
-}
-
-.liceoDescription-title{
+.index-titleLiceo{
+    font-size: 30px;
+    border-bottom: solid #000428;
     text-align: center;
-    border-bottom:solid #fff;
 }
 
-.liceoDescription-text-container{
-    background-color: #000428;
-    padding: 30px;
-    color:#fff;
-    border-radius: 0 60px 60px 0;
+.liceo-description p{
+    color:#413f3f;
+    text-align: justify;
 }
 
-.liceoDescription-readMore{
-    padding: 20px 0;
-    transition-duration:.5s;
+.image-logoLiceo{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 130px;
-    height: 10px;
-    background-color: #fff;
-    border-radius: 20px;
-    text-decoration:none;
-    cursor:pointer
 }
 
-.liceoDescription-readMore:hover{
-    transform: scale(1.1);
-    box-shadow: 0 0 10px;
+.image-logoLiceo figure{
+    width: 300px;
 }
 
-.liceoDescription-readMore a{
-    color: #000428;
-    font-size: 19px;
+.image-logoLiceo img{
+    width: 100%;
+    filter: drop-shadow(5px 5px 10px #000);
+}
+
+.readMore-description{
+    padding: 10px 30px;
+    margin:0 0 0 50px;
+    border:solid #000428;
+    color:#000428;
+    border-radius: 10px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition-duration:.4s;
+}
+
+.readMore-description:hover{
+    background-color: #000428;
+    color:#fff;
 }
 
 /*==============Noticias Container===========*/
@@ -332,6 +279,7 @@ a{
 .news-items:hover{
     transform: scale(1.1);
     box-shadow: 0 0 30px #fff;
+    background-color: #fef1f1;
 }
 
 .imageNews-item figure{
@@ -362,16 +310,69 @@ a{
 
 .readMoreNews-item a{
     text-decoration: none;
-    color:#fff;
-    background-color: #000428;
-    padding: 10px 20px ;
+    border:solid #000428;
+    color:#000428;
     border-radius: 10px;
-    box-shadow: 7px 7px 20px #000428;
+    font-size: 18px;
+    letter-spacing: 2px;
+    transition-duration:.4s;
+    padding: 10px 20px;
     
 }
 
-.readMoreNews-item:hover{
-    transform:translateY(-5px);
+.readMoreNews-item a:hover{
+    background-color: #000428;
+    color:#fff;
+}
+
+
+/* ============Footer=========== */
+
+.footer-container{
+    background-color: #15a1c0;
+    display: grid;
+    grid-template-areas:
+    "titleLMGSM titleLMGSM titleLMGSM"
+    "ubication contact linksForces"
+    "socialNetworks socialNetworks socialNetworks";
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.title-footer-lmgsm{
+    grid-area: titleLMGSM;
+}
+
+.ubication-container-lmgsm{
+    grid-area: ubication;
+}
+
+.footer-contact{
+    grid-area:contact ;
+}
+
+.footer-contact-icon{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-contact-icon h2{
+    margin:0;
+}
+
+.icons{
+    width:30px;
+    height:30px ;
+}
+
+.footer-linksForces{
+    grid-area:linksForces ;
+}
+
+.footer-socialNetworks{
+    grid-area: socialNetworks;
 }
 
 
@@ -399,6 +400,18 @@ a{
 
 
 /*===========Responsive======================================*/
+@media only screen and (max-width:1100px){
+    .liceo-description-container{
+        flex-wrap: wrap;
+    }
+
+    .readMore-description{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
 @media (max-width:1010px){
     .header label {
         display: initial;
