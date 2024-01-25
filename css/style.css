@@ -109,11 +109,11 @@ header img{
 .header-container{
     padding: 20px 0 0 0;
     z-index: -1;
-    background:linear-gradient(to top,rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)),url(../galeria/20240103_133118.jpg);
+    background:linear-gradient(to top,rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)),url(../galeria/20240103_133118.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:top center;
 }
 
 .titulo-header{
@@ -131,7 +131,7 @@ header img{
 
 .titulo-header h2{
     font-size: 30px;
-    padding-bottom: 240px;
+    padding-bottom: 270px;
 }
 
 .header-links-container{
@@ -245,12 +245,17 @@ a{
 .news-container{
     background-color: #000428;
     color:#fff;
+    
 }
 
 .title-news{
     text-align: center;
     padding-top: 50px;
     font-size: 24px;
+    background-image: url(../galeria/20240103_133118.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .news-container-items{
@@ -258,7 +263,7 @@ a{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding:20px;
+    padding:30px;
 }
 
 .news-items{
@@ -266,9 +271,9 @@ a{
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    padding: 20px 10px 40px 10px;
+    padding: 20px 30px 40px 30px;
     margin:40px 10px;
-    width: 280px;
+    width: 340px;
     height: 100%;
     background-color: #fff;
     color:#000;
@@ -283,7 +288,7 @@ a{
 }
 
 .imageNews-item figure{
-    width: 280px;
+    width: 300px;
     margin:0;
 }
 
@@ -329,50 +334,50 @@ a{
 /* ============Footer=========== */
 
 .footer-container{
-    background-color: #15a1c0;
+    margin-top:60px;
+    background-color: #000428;
     display: grid;
     grid-template-areas:
-    "titleLMGSM titleLMGSM titleLMGSM"
-    "ubication contact linksForces"
-    "socialNetworks socialNetworks socialNetworks";
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+    "logoLMGSM logoLMGSM logoLMGSM"
+    "ubication socialNetworks linkForces";
     grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    color:#fff;
 }
 
-.title-footer-lmgsm{
-    grid-area: titleLMGSM;
-}
-
-.ubication-container-lmgsm{
-    grid-area: ubication;
-}
-
-.footer-contact{
-    grid-area:contact ;
-}
-
-.footer-contact-icon{
+.logoLMGSM-footer{
+    grid-area: logoLMGSM;
     display: flex;
     justify-content: center;
 }
 
-.footer-contact-icon h2{
+.logoLMGSM-footer figure{
     margin:0;
+    width: 500px;
 }
 
-.icons{
-    width:30px;
-    height:30px ;
+.logoLMGSM-footer img{
+    width: 100%;
 }
 
-.footer-linksForces{
-    grid-area:linksForces ;
+.ubicationLMGSM-footer{
+    grid-area: ubication;
+    display: flex;
+    justify-content: center;
 }
 
-.footer-socialNetworks{
+.ubicationLMGSM-footer iframe{
+    width: 400px;
+    height: 400px;
+}
+
+.socialsNetworks-footer{
     grid-area: socialNetworks;
+}
+
+.linkForces-footer{
+    grid-area:linkForces;
 }
 
 
