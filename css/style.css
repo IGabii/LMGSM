@@ -385,11 +385,28 @@ a{
     text-align: center;
 }
 
+.socialsNetworks-copyright h4{
+    margin:10px
+}
+
 .icon-footer{
     width: 40px;
     height: 40px;
     color:#fff;
     margin:0;
+    transition-duration: 0.2s;
+}
+
+#icon-instagram:hover{
+    color:#ce17e3;
+}
+
+#icon-facebook:hover{
+    color:#105ef9;
+}
+
+#icon-youtube:hover{
+    color:#FF0000;
 }
 
 .linkForces-footer{
@@ -402,12 +419,12 @@ a{
 .linkForces-footer-items{
     display: flex;
     align-items: center;
-    width: 300px;
-    padding: 10px 0;
-    justify-content: center;
+    width: 250px;
+    padding: 5px 0px 5px 20px;
+    text-align: ce;
     background-color: #fff;
     border-radius: 10px;
-    font-size: 13px;
+    font-size: 12px;
     color:#000;
     margin: 10px 10px 5px 0;
     transition-duration: 0.5s;
@@ -419,7 +436,7 @@ a{
 }
 
 .linkForces-footer figure{
-    width:50px;
+    width:40px;
     margin:0 10px 0 0;
 
 }
