@@ -109,7 +109,7 @@ header img{
 .header-container{
     padding: 20px 0 0 0;
     z-index: -1;
-    background:linear-gradient(to top,rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)),url(../galeria/20240103_133118.jpg);
+    background:linear-gradient(to top,rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)),url(../galeria/fotosLiceo/20240103_133118.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -252,21 +252,41 @@ a{
     text-align: center;
     padding: 50px 0 50px;
     font-size: 24px;
-    background:linear-gradient(to top,rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)),url(../galeria/20240103_133118.jpg);
+    background:linear-gradient(to top,rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)),url(../galeria/fotosLiceo/20240103_133118.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 
-.news-container-items{
+.titleNews-cadetes, .titleNews-personal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.titleNews-cadetes h3, .titleNews-personal h3{
+    border-bottom: solid #fff;
+}
+
+.titleNews-cadetes figure{
+    width: 50px;
+    margin: 0 20px;
+}
+
+.titleNews-cadetes img{
+    width: 100%;
+}
+
+.news-container-items-1,.news-container-items-2{
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding:30px;
+    padding:0px 30px 50px;
 }
 
-.news-items{
+.news-item-1,.news-item-2{
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -281,14 +301,20 @@ a{
     transition-duration: .5s;
 }
 
-.news-items:hover{
+.news-item-2:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #fff;
+    background-color: #fef1f1;
+}
+
+.news-item-1:hover{
     transform: scale(1.1);
     box-shadow: 0 0 30px #fff;
     background-color: #fef1f1;
 }
 
 .imageNews-item figure{
-    width: 300px;
+    width: 350px;
     margin:0;
 }
 
