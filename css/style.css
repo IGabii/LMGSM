@@ -11,13 +11,17 @@ b{
     color:#000;
 }
 
+:root{
+    --colorTema:#000428;
+}
+
 .header{
     position:relative;
     top:0;
     left: 0;
     right: 0;
-    background: #000428;
-    background: #000428;
+    background: var(--colorTema);
+    background: var(--colorTema);
 
     padding: 0px 4%;
     display: flex;
@@ -60,7 +64,7 @@ header img{
 .header .navigation ul li a:hover{
     background-color: #fcfcfc;
     transform: scale(1.05);
-    color:#000428;
+    color:var(--colorTema);
     box-shadow:0 0 7px #fff;
 
 }
@@ -113,7 +117,7 @@ header img{
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position:top center;
+    background-position:center center;
 }
 
 .titulo-header{
@@ -127,6 +131,8 @@ header img{
 
 .titulo-header h2, h1{
     margin:0px 10px ;
+    text-align: center;
+    text-shadow:  0 0 5px var(--colorTema);
 }
 
 .titulo-header h2{
@@ -140,8 +146,8 @@ header img{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: #000428;
-    background:  #000428;
+    background: var(--colorTema);
+    background:  var(--colorTema);
 }
 
 .header-links-item{
@@ -165,7 +171,7 @@ a{
 .header-links-item:hover{
     background-color: #fcfcfc;
     transform: scale(1.05);
-    color:#000428;
+    color:var(--colorTema);
     box-shadow: 0 0 10px #fff;;
 }
 
@@ -200,7 +206,7 @@ a{
 
 .index-titleLiceo{
     font-size: 30px;
-    border-bottom: solid #000428;
+    border-bottom: solid var(--colorTema);
     text-align: center;
 }
 
@@ -227,8 +233,8 @@ a{
 .readMore-description{
     padding: 10px 30px;
     margin:0 0 0 50px;
-    border:solid #000428;
-    color:#000428;
+    border:solid var(--colorTema);
+    color:var(--colorTema);
     border-radius: 10px;
     font-size: 20px;
     letter-spacing: 2px;
@@ -236,14 +242,14 @@ a{
 }
 
 .readMore-description:hover{
-    background-color: #000428;
+    background-color: var(--colorTema);
     color:#fff;
 }
 
 /*==============Noticias Container===========*/
 
 .news-container{
-    background-color: #000428;
+    background-color: var(--colorTema);
     color:#fff;
     
 }
@@ -321,11 +327,11 @@ a{
 .imageNews-item img{
     width: 100%;
     object-fit: cover;
-    box-shadow: 4px 4px 10px #000428;
+    box-shadow: 4px 4px 10px var(--colorTema);
 }
 
 .titleNews-item{
-    border-bottom:solid #000428;
+    border-bottom:solid var(--colorTema);
     width: 70%;
     text-align: center;
 }
@@ -341,8 +347,8 @@ a{
 
 .readMoreNews-item a{
     text-decoration: none;
-    border:solid #000428;
-    color:#000428;
+    border:solid var(--colorTema);
+    color:var(--colorTema);
     border-radius: 10px;
     font-size: 18px;
     letter-spacing: 2px;
@@ -352,7 +358,7 @@ a{
 }
 
 .readMoreNews-item a:hover{
-    background-color: #000428;
+    background-color: var(--colorTema);
     color:#fff;
 }
 
@@ -361,7 +367,7 @@ a{
 
 .footer-container{
     margin-top:60px;
-    background-color: #000428;
+    background-color: var(--colorTema);
     display: grid;
     grid-template-areas:
     "logoLMGSM logoLMGSM logoLMGSM"
@@ -470,6 +476,96 @@ a{
 .linkForces-footer img{
     width: 100%;
 }
+
+/* ==============Autoridades================================== */
+
+.header-autoridades-container{
+    background:linear-gradient(to top,rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),url(../galeria/fotosLiceo/liceo1.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.title-autoridades-container{
+    text-align: center;
+    padding: 150px 0;
+}
+
+.title-autoridades-container h2{
+    margin: 0;
+    font-size: 50px;
+    color:#fff;
+    text-shadow: 0 0 5px #000;
+}
+
+.body-autoridades-container{
+    margin: 30px;
+}
+
+.box1-autoridades-container{
+    display: flex;
+    justify-content: center;
+    margin: 30px 30px 60px;
+}
+
+.box1-autoridades-item, .box2-autoridades-item, .box3-autoridades-item, .box4-autoridades-item{
+    text-align: center;
+    border:solid #000;
+    margin: 30px;
+    background-color: var(--colorTema);
+    color:#fff;
+    width: 400px;
+}
+
+.box1-autoridades-item figure, .box2-autoridades-item figure, .box-autoridades-item figure, .box4-autoridades-item figure{
+    width: 300px;
+    border:solid #000;
+    margin:10px;
+    text-align: center;
+}
+
+.box1-autoridades-item img, .box2-autoridades-item img, .box3-autoridades-item img, .box4-autoridades-item img{
+    width: 100%;
+}
+
+.box2-autoridades-container, .box3-autoridades-container, .box4-autoridades-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 30px 60px;
+}
+
+.box1-autoridades-item h3, .box2-autoridades-item h3, .box3-autoridades-item h3, .box4-autoridades-item h3{
+    margin: 10px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
