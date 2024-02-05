@@ -505,38 +505,49 @@ a{
 .box1-autoridades-container{
     display: flex;
     justify-content: center;
-    margin: 30px 30px 60px;
+    margin: 30px 30px 100px;
 }
 
-.box1-autoridades-item, .box2-autoridades-item, .box3-autoridades-item, .box4-autoridades-item{
-    text-align: center;
-    border:solid #000;
-    margin: 30px;
-    background-color: var(--colorTema);
-    color:#fff;
-    width: 400px;
+.box2-autoridades-container, .box3-autoridades-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 
-.box1-autoridades-item figure, .box2-autoridades-item figure, .box-autoridades-item figure, .box4-autoridades-item figure{
-    width: 300px;
-    border:solid #000;
-    margin:10px;
-    text-align: center;
+.box1-autoridades-item,.box2-autoridades-item, .box3-autoridades-item{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 20px 20px 100px;
+    transition-duration: 0.5s;
 }
 
-.box1-autoridades-item img, .box2-autoridades-item img, .box3-autoridades-item img, .box4-autoridades-item img{
+.box1-autoridades-photo figure, .box2-autoridades-photo figure, .box3-autoridades-photo figure{
+    margin:0px;
+    width: 250px;
+}
+
+.box1-autoridades-item:hover, .box2-autoridades-item:hover, .box3-autoridades-item:hover{
+    transform: scale(1.05);
+}
+
+.box1-autoridades-photo img, .box2-autoridades-photo img, .box3-autoridades-photo img{
     width: 100%;
 }
 
-.box2-autoridades-container, .box3-autoridades-container, .box4-autoridades-container{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 30px 30px 60px;
+.box1-autoridades-name, .box2-autoridades-name, .box3-autoridades-name{
+    background-color:#353c7a;
+    color:#fff;
+    position:absolute;
+    text-align: center;
+    width: 230px;
+    padding: 10px 0;
+    top:83%
 }
 
-.box1-autoridades-item h3, .box2-autoridades-item h3, .box3-autoridades-item h3, .box4-autoridades-item h3{
-    margin: 10px;
-    font-size: 16px;
+.box1-autoridades-name h2, h3, .box2-autoridades-name h2 h3, .box3-autoridades-name h2, h3{
+    margin: 10px 0;
 }
 
 
