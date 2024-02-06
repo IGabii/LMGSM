@@ -480,7 +480,7 @@ a{
 /* ==============Autoridades================================== */
 
 .header-autoridades-container{
-    background:linear-gradient(to top,rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),url(../galeria/fotosLiceo/liceo1.jpeg);
+    background:linear-gradient(to top,rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)),url(../galeria/fotosLiceo/liceo1.jpeg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -499,7 +499,9 @@ a{
 }
 
 .body-autoridades-container{
-    margin: 30px;
+    margin:  0 30px;
+    box-shadow: 0px 0px 20px  #645858;
+    padding-bottom: 40px;
 }
 
 .box1-autoridades-container{
@@ -508,14 +510,14 @@ a{
     margin: 30px 30px 100px;
 }
 
-.box2-autoridades-container, .box3-autoridades-container{
+.box2-autoridades-container, .box3-autoridades-container, .box4-autoridades-container{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 100px;
 }
 
-.box1-autoridades-item,.box2-autoridades-item, .box3-autoridades-item{
+.box1-autoridades-item,.box2-autoridades-item, .box3-autoridades-item, .box4-autoridades-item{
     position: relative;
     display: flex;
     justify-content: center;
@@ -523,31 +525,49 @@ a{
     transition-duration: 0.5s;
 }
 
-.box1-autoridades-photo figure, .box2-autoridades-photo figure, .box3-autoridades-photo figure{
+.box1-autoridades-photo figure, .box2-autoridades-photo figure, .box3-autoridades-photo figure, .box4-autoridades-photo figure{
     margin:0px;
     width: 250px;
 }
 
-.box1-autoridades-item:hover, .box2-autoridades-item:hover, .box3-autoridades-item:hover{
+.box1-autoridades-item:hover, .box2-autoridades-item:hover, .box3-autoridades-item:hover, .box4-autoridades-item:hover{
     transform: scale(1.05);
 }
 
-.box1-autoridades-photo img, .box2-autoridades-photo img, .box3-autoridades-photo img{
+.box1-autoridades-photo img, .box2-autoridades-photo img, .box3-autoridades-photo img, .box4-autoridades-photo img{
     width: 100%;
 }
 
-.box1-autoridades-name, .box2-autoridades-name, .box3-autoridades-name{
+.box1-autoridades-name, .box2-autoridades-name, .box3-autoridades-name, .box4-autoridades-name{
     background-color:#353c7a;
     color:#fff;
     position:absolute;
     text-align: center;
     width: 230px;
+    height: 90px;
     padding: 10px 0;
-    top:83%
+    top:83%;
 }
 
-.box1-autoridades-name h2, h3, .box2-autoridades-name h2 h3, .box3-autoridades-name h2, h3{
+.box2-autoridades-name{
+    height: 110px;
+}
+
+.box4-autoridades-name{
+    height: 140px;
+}
+
+#fontSize-jefeDeCuerpo h2{
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.box1-autoridades-name h2, h3, .box2-autoridades-name h2 h3, .box3-autoridades-name h2, h3, .box4-autoridades-name h2 h3{
     margin: 10px 0;
+}
+
+.fontSize-autoridades{
+    font-size: 18px;
 }
 
 
