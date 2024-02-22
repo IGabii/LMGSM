@@ -485,7 +485,7 @@ a{
 
 /* ==============Autoridades================================== */
 
-.header-autoridades-container{
+.header-autoridades-container,.header-historia-container{
     background:linear-gradient(to top,rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)),url(../galeria/fotosLiceo/liceo1.jpeg);
     background-position: bottom;
     background-size: cover;
@@ -499,12 +499,12 @@ a{
     background-attachment: fixed;
 }
 
-.title-autoridades-container, .title-mision-container{
+.title-autoridades-container, .title-mision-container, .title-historia-container{
     text-align: center;
     padding: 100px 0;
 }
 
-.title-autoridades-container h2, .title-mision-container h2{
+.title-autoridades-container h2, .title-mision-container h2, .title-historia-container h2{
     margin: 0 ;
     font-size: 50px;
     color:#fff;
@@ -650,10 +650,50 @@ a{
     text-align: justify;
     padding: 20px;
     box-shadow: 2px 2px 20px #413f3f;
-    border: double #000
+    border: double #000;
 }
 
 
+
+
+/* ==============HISTORIA========================================================================= */
+
+
+.body-historia-item{
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0 100px;
+    padding: 30px;
+    box-shadow: 0 0 10px #fff;
+    bORDER:double #000;
+}
+
+.body-historia-item p{
+    text-align: justify;
+}
+
+.body-historia-item figure{
+    width: 59%;
+    margin-left: 0;
+}
+
+.body-historia-item img{
+    width: 100%;
+}
+
+#historia-photo1{
+    float: left;
+    padding: 10px;
+}
+
+#historia-photo2{
+    width: 140%;
+}
+
+#historia-photo3{
+    width: 80%;
+    float: left;
+    margin-right: 20px;
+}
 
 
 
