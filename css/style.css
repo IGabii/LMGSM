@@ -26,19 +26,18 @@ b{
     top:0;
     left: 0;
     right: 0;
-    background: var(--colorTema);
-    background: var(--colorTema);
-
+    background-color: var(--colorTema);
     padding: 0px 4%;
     display: flex;
     flex-direction: column;
     align-items:center;
     justify-content: center;
     z-index: 1000;
+    height: 130px;
 }
 
 header figure{
-    width: 450px;
+    width: 420px;
     margin:0;
 }
 
@@ -50,6 +49,7 @@ header img{
 .navigation ul{
     list-style: none;
 }
+
 
 .header .navigation ul li{
     float: left;
@@ -65,6 +65,7 @@ header img{
     border-radius: 10px;
     display: block;
     transition: all .5s ease;
+    
 }
 
 .header .navigation ul li a:hover{
@@ -72,7 +73,6 @@ header img{
     transform: scale(1.05);
     color:var(--colorTema);
     box-shadow:0 0 7px #fff;
-
 }
 
 .header .navigation ul li ul{
@@ -124,6 +124,14 @@ header img{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position:center center;
+    position: relative;
+    box-shadow: 0 10px 20px #072402;
+}
+
+.container3d{
+    position: absolute;
+    z-index: 2;
+    top:96%;
 }
 
 .titulo-header{
@@ -153,7 +161,8 @@ header img{
     justify-content: space-evenly;
     align-items: center;
     background: var(--colorTema);
-    background:  var(--colorTema);
+    margin:0 20px 0 20px;
+    border-radius: 10px 10px 0 0 ;
 }
 
 .header-links-item{
@@ -191,10 +200,12 @@ a{
 }
 
 
-/*==========Body Container==================*/
+/*==========Body Container===================================================*/
 
 .body-index-container{
     padding: 30px 40px 100px;
+    box-shadow: 0px 20px 20px 0px #645858;
+    margin:0 20px 0 20px; 
 }
 
 .liceo-description-container{
@@ -252,12 +263,11 @@ a{
     color:#fff;
 }
 
-/*==============Noticias Container===========*/
+/*==============Noticias Container======================================0========*/
 
 .news-container{
-    background-color: var(--colorTema);
-    color:#fff;
-    
+    box-shadow: 0px 20px 20px 0px #645858;
+    margin:0 20px 0 20px; 
 }
 
 .title-news{
@@ -268,108 +278,57 @@ a{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    color:#fff;
+    text-shadow: 1px 1px #000;
 }
 
-.titleNews-cadetes, .titleNews-personal{
-    display: flex;
+.cadetesNews-container{
+    display:grid;
+    grid-template-columns:  1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    background-color: var(--colorTema);
 }
 
-.titleNews-cadetes h3, .titleNews-personal h3{
-    border-bottom: solid #fff;
-}
-
-.titleNews-cadetes figure{
-    width: 50px;
-    margin: 0 20px;
-}
-
-.titleNews-cadetes img{
-    width: 100%;
-}
-
-.news-container-items-1,.news-container-items-2{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    padding:0px 30px 50px;
-}
-
-.news-item-1,.news-item-2{
-    display: flex;
-    flex-direction:column;
+.cadetesNews-item{
+    box-shadow: 1px 1px 10px #413f3f;
+    margin:40px 20px;
+    display:flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 20px 30px 40px 30px;
-    margin:40px 10px;
-    width: 340px;
-    height: 100%;
+    padding: 20px;
+    transition: ease-in .3s;
     background-color: #fff;
-    color:#000;
-    border-radius: 10px;
-    transition-duration: .5s;
+    border-radius: 4px;
 }
 
-.news-item-2:hover{
-    transform: scale(1.1);
-    box-shadow: 0 0 30px #fff;
-    background-color: #fef1f1;
+.cadetesNews-item:hover{
+    transform: scale(1.05);
+    background-color: #e2e2d9;
+    box-shadow: 0 0 10px #fff;
 }
 
-.news-item-1:hover{
-    transform: scale(1.1);
-    box-shadow: 0 0 30px #fff;
-    background-color: #fef1f1;
-}
 
-.imageNews-item figure{
-    width: 350px;
-    margin:0;
-}
-
-.imageNews-item img{
+.photoNews img{
     width: 100%;
-    object-fit: cover;
-    box-shadow: 4px 4px 10px var(--colorTema);
+    height: 100%;
+    box-shadow: 0px 6px  20px #413f3f;
+    border-radius: 3px;
 }
 
-.titleNews-item{
-    border-bottom:solid var(--colorTema);
-    width: 70%;
-    text-align: center;
+.titleNews-cadetes{
+    color:#000;
 }
 
-.text-news-item{
+.textNews{
+    color:#424040;
+    font-size: 15px;
     text-align: justify;
 }
 
-.readMoreNews-item{
-    padding-top: 40px;
-    transition-duration: .5s;
-}
 
-.readMoreNews-item a{
-    text-decoration: none;
-    border:solid var(--colorTema);
-    color:var(--colorTema);
-    border-radius: 10px;
-    font-size: 18px;
-    letter-spacing: 2px;
-    transition-duration:.4s;
-    padding: 10px 20px;
-    
-}
-
-.readMoreNews-item a:hover{
-    background-color: var(--colorTema);
-    color:#fff;
-}
-
-
-/* ============Footer=========== */
+/* ============Footer=================================================================== */
 
 .footer-container{
     margin-top:60px;
