@@ -269,9 +269,8 @@ a{
 .gallerySection-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 40px 0;
+    padding: 40px 0 100px;
     margin:0 20px 0 20px;
-    gap:8px
 }
 
 .gallerySection-item1, .gallerySection-item2, .gallerySection-item3, .gallerySection-item4{
@@ -285,6 +284,8 @@ a{
     justify-content: end;
     flex-direction: column;
     font-size: 20px;
+    clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%);
+    border-radius: 4px;
 }
 
 .gallerySection-item1 h3, .gallerySection-item2 h3, .gallerySection-item3 h3, .gallerySection-item4 h3{
@@ -298,31 +299,31 @@ a{
 }
 
 .gallerySection-item2{
-    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)),url(../galeria/fotosLiceo/liceo3.jpg);
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)),url(../galeria/fotosLiceo/liceo9.jpg);
 }
 
 .gallerySection-item2:hover{
-    background-image: linear-gradient(to top,rgba(0, 0, 0, 0),rgba(0,0,0,0)),url(../galeria/fotosLiceo/liceo3.jpg);
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0),rgba(0,0,0,0)),url(../galeria/fotosLiceo/liceo9.jpg);
     transform:scale(1.04);
     text-shadow: 02px 2px #000;
 }
 
 .gallerySection-item3{
-    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)),url(../galeria/fotosLiceo/fondoLiceo2.jpg);
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)),url(../galeria/fotosLiceo/liceo10.jpg);
 }
 
 .gallerySection-item3:hover{
-    background-image: linear-gradient(to top,rgba(0, 0, 0, 0),rgba(0,0,0,0)),url(../galeria/fotosLiceo/fondoliceo2.jpg);
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0),rgba(0,0,0,0)),url(../galeria/fotosLiceo/liceo10.jpg);
     transform:scale(1.04);
     text-shadow: 02px 2px #000;
 }
 
 .gallerySection-item4{
-    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)),url(../galeria/fotosLiceo/liceo5.jpg);
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)),url(../galeria/fotosLiceo/liceo12.jpg);
 }
 
 .gallerySection-item4:hover{
-    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.5),rgba(0,0,0,0)),url(../galeria/fotosLiceo/liceo5.jpg);
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.5),rgba(0,0,0,0)),url(../galeria/fotosLiceo/liceo12.jpg);
     transform: scale(1.04);
     text-shadow: 02px 2px #000;
 }
@@ -333,18 +334,42 @@ a{
 /*==============Noticias Container======================================0========*/
 
 .news-container{
-    padding: 100px 0;
+    padding: 0 0 0 0 ;
+    background-color: var(--colorTema);
 }
 
 .newsTitle-container{
-    background:linear-gradient(to top,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../galeria/fotosLiceo/20240103_133049.jpg);
+    background:linear-gradient(to top,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../galeria/fotosLiceo/20240103_133049.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
     padding: 50px 0;
     text-align:center;
     font-size:30px;
-    text-shadow: 2px 2px #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.newsTitle-container h2{
+    margin: 0;
+    border-bottom: solid #fff;
+}
+
+.newsTitle-container a{
+    margin:0;
+    font-size: 20px;
+    border:solid #fff;
+    color:#fff;
+    padding: 7px;
+    border-radius: 4px;
+    transition: .5s;
+}
+
+.newsTitle-container a:hover{
+    box-shadow: 0 0 20px #fff;
+    background-color: #fff;
+    color:var(--colorTema)
 }
 
 
@@ -385,6 +410,7 @@ a{
 
 .imageNewsCadetes img{
     width: 100%;
+    box-shadow: 1px 0px 5px #fff;
 }
 
 .newsCadetes{
@@ -514,9 +540,9 @@ a{
 
 /* ==============Autoridades===================================================================================== */
 
-.header-autoridades-container,.header-historia-container, .header-cancionLiceo-container{
+.header-autoridades-container,.header-historia-container, .header-cancionLiceo-container,.header-directores-container{
     background:linear-gradient(to top,rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)),url(../galeria/fotosLiceo/liceo1.jpeg);
-    background-position: bottom;
+    background-position: bottom center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -528,12 +554,12 @@ a{
     background-attachment: fixed;
 }
 
-.title-autoridades-container, .title-mision-container, .title-historia-container,.title-cancionLiceo-container{
+.title-autoridades-container, .title-mision-container, .title-historia-container,.title-cancionLiceo-container,.title-directores-container{
     text-align: center;
     padding: 100px 0;
 }
 
-.title-autoridades-container h2, .title-mision-container h2, .title-historia-container h2, .title-cancionLiceo-container h2{
+.title-autoridades-container h2, .title-mision-container h2, .title-historia-container h2, .title-cancionLiceo-container h2, .title-directores-container h2{
     margin: 0 ;
     font-size: 50px;
     color:#fff;
@@ -542,9 +568,10 @@ a{
 
 .body-autoridades-container{
     margin:  0 30px ;
-    box-shadow: 0px 0px 20px  #645858;
+    box-shadow: 1px 1px 10px  #fff;
     padding-bottom: 40px;
-    background-color: #072402;
+    background-color: var(--colorTema);
+    border-radius: 10px;
 }
 
 .box1-autoridades-container{
@@ -679,7 +706,8 @@ a{
     text-align: justify;
     padding: 20px;
     box-shadow: 2px 2px 20px #413f3f;
-    border: double #000;
+    border: double #fff;
+    background-color: var(--colorTema);
 }
 
 
@@ -689,15 +717,20 @@ a{
 
 
 .body-historia-item{
-    background-color: rgba(255, 255, 255, 0.8);
-    margin: 0 100px;
+    background:linear-gradient(to top,rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(../galeria/extras/papelGastado.jpg);
+    background-attachment: fixed;
+    margin: 0 160px;
     padding: 30px;
     box-shadow: 0 0 10px #fff;
-    bORDER:double #000;
+    bORDER:double #fff;
+    color:#fff;
+    padding: 30px 100px;
+    border-radius: 5px ;
 }
 
 .body-historia-item p{
     text-align: justify;
+    font-size: 18px;
 }
 
 .body-historia-item figure{
@@ -731,6 +764,7 @@ a{
     background-color: var(--colorTema);
     display: grid;
     grid-template-columns: 1fr 1fr;
+    color:#000;
 }
 
 .musicBox-container{
