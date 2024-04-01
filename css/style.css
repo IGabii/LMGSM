@@ -79,7 +79,7 @@ header img{
     position: absolute;
     left: 0;
     width: 100%;
-    background-color: rgba(1,1,1,0.8);
+    background-color: rgb(23, 57, 89,0.9);
     display: none;
     padding:2px;
     border-radius: 0 0 10px 10px;
@@ -422,6 +422,45 @@ a{
     text-align:justify;
 }
 
+/* ==========Fechas Importantes================================================================================= */
+
+.title-importantDates{
+    text-align: center;
+    border-bottom:solid #fff;
+    font-size: 20px;
+}
+
+.importantDates-items-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:10px 40px;
+}
+
+.importantDates-item{
+    background-color: var(--colorTema);
+    padding: 20px 0px;
+    text-align: center;
+    width: 100%;
+    height: 160px;
+    margin:15px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.importantDates-item h3{
+    margin:0;
+    font-size: 30px;
+}
+
+.importantDates-item p{
+    margin:0;
+}
+
+.importantDates-item:hover{
+    background-color: #fff;
+    color:var(--colorTema)
+}
 
 
 /* ============Footer=================================================================== */
@@ -540,7 +579,7 @@ a{
 
 /* ==============Autoridades===================================================================================== */
 
-.header-autoridades-container,.header-historia-container, .header-cancionLiceo-container,.header-directores-container{
+.header-autoridades-container,.header-historia-container, .header-cancionLiceo-container,.header-directores-container,.header-abanderados-container{
     background:linear-gradient(to top,rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)),url(../galeria/fotosLiceo/liceo1.jpeg);
     background-position: bottom center;
     background-size: cover;
@@ -554,12 +593,12 @@ a{
     background-attachment: fixed;
 }
 
-.title-autoridades-container, .title-mision-container, .title-historia-container,.title-cancionLiceo-container,.title-directores-container{
+.title-autoridades-container, .title-mision-container, .title-historia-container,.title-cancionLiceo-container,.title-directores-container,.title-abanderados-container{
     text-align: center;
     padding: 100px 0;
 }
 
-.title-autoridades-container h2, .title-mision-container h2, .title-historia-container h2, .title-cancionLiceo-container h2, .title-directores-container h2{
+.title-autoridades-container h2, .title-mision-container h2, .title-historia-container h2, .title-cancionLiceo-container h2, .title-directores-container h2, .title-abanderados-container h2{
     margin: 0 ;
     font-size: 50px;
     color:#fff;
@@ -814,6 +853,45 @@ audio{
     padding: 10px 0;
 }
 
+/* ======================DIRECTORES y ABANDERADOS============================================================== */
+
+.body-directores-container,.body-abanderados-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 15px;
+}
+
+table{
+    background-color: var(--colorTema);
+    padding: 40px 100px;
+    color:#d4cdcd;
+}
+
+th{
+    color:#f8d90f;
+    text-align: start;
+}
+
+td{
+    padding: 10px  30px 10px ;
+    margin:0 30px;
+    text-align: start;
+    border-bottom: solid 1px #fff;
+}
+
+tr{
+    border-bottom: solid 1px #fff;
+}
+
+.padding-td{
+    padding-right: 200px;
+}
+
+.title-directores-item, .title-abanderados-item{
+    font-size: 26px;
+}
 
 
 
