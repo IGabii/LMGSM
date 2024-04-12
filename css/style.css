@@ -275,7 +275,7 @@ a{
 
 .gallerySection-item1, .gallerySection-item2, .gallerySection-item3, .gallerySection-item4{
     height: 500px;
-    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)),url(../galeria/fotosLiceo/picture-gallerySection1.jpg);
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)),url(../galeria/fotosLiceo/liceo11.jpg);
     background-size: cover;
     background-position: center;
     transition-duration: 1s;
@@ -293,7 +293,7 @@ a{
 }
 
 .gallerySection-item1:hover{
-    background-image: linear-gradient(to top,rgba(0, 0, 0, 0),rgba(0,0,0,0)),url(../galeria/fotosLiceo/picture-gallerySection1.jpg);
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0),rgba(0,0,0,0)),url(../galeria/fotosLiceo/liceo11.jpg);
     transform:scale(1.04);
     text-shadow: 02px 2px #000;
 }
@@ -319,11 +319,11 @@ a{
 }
 
 .gallerySection-item4{
-    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)),url(../galeria/fotosLiceo/liceo12.jpg);
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)),url(../galeria/fotosLiceo/liceo12.png);
 }
 
 .gallerySection-item4:hover{
-    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.5),rgba(0,0,0,0)),url(../galeria/fotosLiceo/liceo12.jpg);
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.5),rgba(0,0,0,0)),url(../galeria/fotosLiceo/liceo12.png);
     transform: scale(1.04);
     text-shadow: 02px 2px #000;
 }
